@@ -1,13 +1,26 @@
+# Solicita ao usuário uma nota
 nota = float(input("Digite a nota: "))
-if nota > 10 or nota < 0 :
+
+# Verifica se a nota está fora do intervalo válido
+if nota > 10 or nota < 0:
   print("Valor inválido")
-elif nota >= 9 and nota <= 10 :
+
+# Nota entre 9 e 10 → Conceito A
+elif nota >= 9:
   print("Conceito A")
-elif nota >= 7 and nota < 8.9 :
+
+# Nota entre 7 e 8.9 → Conceito B
+elif nota >= 7:
   print("Conceito B")
-elif nota >= 5 and nota < 6.9 :
+
+# Nota entre 5 e 6.9 → Conceito C
+elif nota >= 5:
   print("Conceito C")
-elif nota >= 3 and nota < 4.9 :
+
+# Nota entre 3 e 4.9 → Conceito D
+elif nota >= 3:
   print("Conceito D")
-elif nota <= 3 and nota >= 0 :
+
+# Nota entre 0 e 2.9 → Conceito E
+else:
   print("Conceito E")
