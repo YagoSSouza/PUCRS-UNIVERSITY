@@ -6,7 +6,7 @@ if saldo<500:
   print("Não há limite")
   
 # Verifica se o saldo está entre 500 e 999.99
-elif saldo>=500 and  saldo<1000: 
+elif saldo<1000: 
   # Calcula 8% do saldo como limite
   limite = saldo*0.08
   print(f"Seu limite é de 8%: R${limite:.2f}" )
